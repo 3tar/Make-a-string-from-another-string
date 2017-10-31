@@ -1,0 +1,1 @@
+# Make-a-string-from-another-string
