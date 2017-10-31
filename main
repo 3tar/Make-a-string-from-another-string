@@ -1,0 +1,29 @@
+#include<iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+ {
+     int t;
+     string str1,str2;
+     cin>>t;
+     while(t--)
+     {
+         cin>>str1>>str2;
+         int result=1;
+         for(int ch=0;ch<str1.length();ch++)
+         {
+             if(str2.find(str1[ch])== std::string::npos)
+             {
+                 result=0;
+                 break;
+             }
+             //delete character that finded from string
+             str2.erase(str2.begin()+str2.find(str1[ch]));
+         }
+         cout<<result<<'\n';
+     }
+	
+	return 0;
+}
